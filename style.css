@@ -1,41 +1,48 @@
 
-@media (min-width: 800px) {
-    #glass {display: flex; flex-direction: row; height: 100vh;}
-    .photo {height: 100px;}
-}
-
 body{
+    display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+    /* flex-flow: row wrap; */
+    height: 100vw;
+    padding: 10px;
+    width: 75vh;
+    /* justify-content: space-around; */
+    margin: 0;
+    padding: 0;
+    background-color: grey;
 }
 #glass{
-    display: flex;
-    flex-direction: column;
-    height: 1200px;
+    break-inside: avoid;
+    padding: 5px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+    flex-flow: row wrap;
+    height: 100vw;
+    padding: 10px;
+    width: 75vh;
+    justify-content: space-around;
 
 }
 #headerContent {
+    height: 50%;
+    width: 80vw;
+    text-align: center;
+    padding: 10px;
     border: 6px solid rgb(20, 20, 21);
     border-radius: 12px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 26px;
-    text-align: center;
-    background-color: rgb(141, 140, 140);
-    color: white;
-    flex-direction: column;
-    flex-basis: 15%;
-}
-
-#images {
-    color: white;
-    display: flex;
-    flex-basis: 85%;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
+    background-color: goldenrod;
 }
 
 
 #logo {
+    width: 20vw;
+    flex-flow: row wrap;
+    justify-content: space-around;
     border: 3px solid black;
     border-radius: 25px;
+
 }
